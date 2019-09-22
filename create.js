@@ -9,7 +9,7 @@ export async function main(event, context) {
     Item: {
       userId: event.requestContext.identity.cognitoIdentityId,
       imageId: uuid.v1(),
-      image: data.content,
+      imageURL: data.imageURL,
       createAt: Date.now(),
     }
   };
